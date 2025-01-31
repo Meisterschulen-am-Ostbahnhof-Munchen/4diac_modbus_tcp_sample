@@ -9,5 +9,7 @@
 	<SubAppInterfaceList>
 	</SubAppInterfaceList>
 	<SubAppNetwork>
+		<SubApp Name="mapping_DI" Type="mapping_DI" x="1580" y="420">
+		</SubApp>
 	</SubAppNetwork>
 </SubAppType>
