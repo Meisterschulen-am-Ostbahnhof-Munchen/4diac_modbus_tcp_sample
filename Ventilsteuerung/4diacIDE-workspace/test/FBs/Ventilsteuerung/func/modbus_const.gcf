@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalConstants Name="modbus_const" Comment="Global constants" >
+	<Identification Standard="61499-1">
+	</Identification>
+	<VersionInfo Version="1.0" Author="franz" Date="2024-08-18">
+	</VersionInfo>
+	<CompilerInfo>
+	</CompilerInfo>
+	<GlobalConstants>
+		<VarDeclaration Name="ID_01" Type="WSTRING" InitialValue="&quot;modbus[tcp:192.168.1.99:502:1:500:h468:h470]&quot;"/>
+		<VarDeclaration Name="ID_02" Type="WSTRING" InitialValue="&quot;modbus[tcp:192.168.1.99:502:1:500:h51:]&quot;"/>
+	</GlobalConstants>
+	<OriginalSource><![CDATA[VAR_GLOBAL CONSTANT
+	ID_01 : WSTRING := "modbus[tcp:192.168.1.99:502:1:500:h468:h470]";
+	ID_02 : WSTRING := "modbus[tcp:192.168.1.99:502:1:500:h51:]";
+END_VAR
+
+]]></OriginalSource>
+</GlobalConstants>
