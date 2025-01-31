@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SubAppType Name="Ventilsteuerung" Comment="Subapplication Type" >
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="franz" Date="2025-01-31">
+	</VersionInfo>
+	<CompilerInfo>
+	</CompilerInfo>
+	<SubAppInterfaceList>
+	</SubAppInterfaceList>
+	<SubAppNetwork>
+		<SubApp Name="func" Type="func" x="133.33" y="33.33">
+		</SubApp>
+		<SubApp Name="mapping" Type="mapping" x="133.33" y="413.33">
+		</SubApp>
+	</SubAppNetwork>
+</SubAppType>
