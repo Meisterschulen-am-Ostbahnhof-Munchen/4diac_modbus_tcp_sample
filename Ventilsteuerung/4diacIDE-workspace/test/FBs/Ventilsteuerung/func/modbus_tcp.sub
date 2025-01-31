@@ -17,7 +17,13 @@
 		</FB>
 		<FB Name="ASSEMBLE_BYTE_FROM_BOOLS" Type="ASSEMBLE_BYTE_FROM_BOOLS" x="-1200" y="1400">
 			<Parameter Name="BIT_00" Value="TRUE"/>
+			<Parameter Name="BIT_01" Value="TRUE"/>
+			<Parameter Name="BIT_02" Value="TRUE"/>
+			<Parameter Name="BIT_03" Value="TRUE"/>
+			<Parameter Name="BIT_04" Value="TRUE"/>
 			<Parameter Name="BIT_05" Value="TRUE"/>
+			<Parameter Name="BIT_06" Value="TRUE"/>
+			<Parameter Name="BIT_07" Value="TRUE"/>
 		</FB>
 		<FB Name="SPLIT_BYTE_INTO_BOOLS_1" Type="SPLIT_BYTE_INTO_BOOLS" x="3900" y="2800">
 		</FB>
