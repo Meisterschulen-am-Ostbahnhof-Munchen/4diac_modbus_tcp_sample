@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SubAppType Name="func" Comment="Subapplication Type" >
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="franz" Date="2025-01-31">
+	</VersionInfo>
+	<CompilerInfo>
+	</CompilerInfo>
+	<SubAppInterfaceList>
+	</SubAppInterfaceList>
+	<SubAppNetwork>
+		<SubApp Name="modbus_tcp" Type="modbus_tcp" x="2760" y="373.33">
+		</SubApp>
+	</SubAppNetwork>
+</SubAppType>
