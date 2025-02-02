@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SubAppType Name="Outputs" Comment="Subapplication Type" >
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="franz" Date="2025-01-31">
+	</VersionInfo>
+	<CompilerInfo>
+	</CompilerInfo>
+	<SubAppInterfaceList>
+	</SubAppInterfaceList>
+	<SubAppNetwork>
+		<FB Name="DigitalInput_I1" Type="IX" x="413.33" y="33.33">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="F_BYTE_TO_WORD" Type="F_BYTE_TO_WORD" x="3340" y="4360">
+		</FB>
+		<FB Name="ASSEMBLE_BYTE_FROM_BOOLS" Type="ASSEMBLE_BYTE_FROM_BOOLS" x="1626.67" y="4360">
+		</FB>
+		<FB Name="Outputs" Type="CLIENT_1" x="4860" y="4260">
+			<Parameter Name="QI" Value="TRUE"/>
+			<Parameter Name="ID" Value="ID_01_TCP"/>
+		</FB>
+		<FB Name="SPLIT_BYTE_INTO_BOOLS" Type="SPLIT_BYTE_INTO_BOOLS" x="5826.67" y="4360">
+		</FB>
+		<FB Name="DigitalInput_I2" Type="IX" x="413.33" y="1213.33">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="DigitalInput_I3" Type="IX" x="413.33" y="2393.33">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="DigitalInput_I4" Type="IX" x="413.33" y="3573.33">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="DigitalInput_I5" Type="IX" x="413.33" y="4753.33">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="DigitalInput_I6" Type="IX" x="413.33" y="5933.33">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="DigitalInput_I7" Type="IX" x="413.33" y="7113.33">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="DigitalInput_I8" Type="IX" x="413.33" y="8293.33">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<EventConnections>
+			<Connection Source="DigitalInput_I1.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
+			<Connection Source="ASSEMBLE_BYTE_FROM_BOOLS.CNF" Destination="F_BYTE_TO_WORD.REQ"/>
+			<Connection Source="F_BYTE_TO_WORD.CNF" Destination="Outputs.REQ"/>
+			<Connection Source="Outputs.CNF" Destination="SPLIT_BYTE_INTO_BOOLS.REQ"/>
+			<Connection Source="DigitalInput_I2.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
+			<Connection Source="DigitalInput_I3.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
+			<Connection Source="DigitalInput_I4.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
+			<Connection Source="DigitalInput_I5.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
+			<Connection Source="DigitalInput_I6.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
+			<Connection Source="DigitalInput_I7.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
+			<Connection Source="DigitalInput_I8.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
+		</EventConnections>
+		<DataConnections>
+			<Connection Source="DigitalInput_I1.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_00" dx1="340"/>
+			<Connection Source="ASSEMBLE_BYTE_FROM_BOOLS." Destination="F_BYTE_TO_WORD.IN"/>
+			<Connection Source="F_BYTE_TO_WORD.OUT" Destination="Outputs.SD_1" dx1="73.33"/>
+			<Connection Source="Outputs.RD_1" Destination="SPLIT_BYTE_INTO_BOOLS.IN" dx1="73.33"/>
+			<Connection Source="DigitalInput_I2.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_01" dx1="273.33"/>
+			<Connection Source="DigitalInput_I3.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_02" dx1="206.67"/>
+			<Connection Source="DigitalInput_I4.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_03" dx1="73.33"/>
+			<Connection Source="DigitalInput_I5.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_04" dx1="206.67"/>
+			<Connection Source="DigitalInput_I8.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_07" dx1="406.67"/>
+			<Connection Source="DigitalInput_I7.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_06" dx1="340"/>
+			<Connection Source="DigitalInput_I6.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_05" dx1="273.33"/>
+		</DataConnections>
+	</SubAppNetwork>
+</SubAppType>

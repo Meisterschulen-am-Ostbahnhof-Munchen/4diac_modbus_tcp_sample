@@ -7,12 +7,12 @@
 	<CompilerInfo>
 	</CompilerInfo>
 	<GlobalConstants>
-		<VarDeclaration Name="ID_01" Type="WSTRING" InitialValue="&quot;modbus[tcp:192.168.1.99:502:1:500:h468:h470]&quot;"/>
-		<VarDeclaration Name="ID_02" Type="WSTRING" InitialValue="&quot;modbus[tcp:192.168.1.99:502:1:500:h51:]&quot;"/>
+		<VarDeclaration Name="ID_01_TCP" Type="WSTRING" InitialValue="&quot;modbus[tcp:192.168.1.99:502:1:500:h468:h470]&quot;"/>
+		<VarDeclaration Name="ID_02_TCP" Type="WSTRING" InitialValue="&quot;modbus[tcp:192.168.1.99:502:1:500:h51:]&quot;"/>
 	</GlobalConstants>
 	<OriginalSource><![CDATA[VAR_GLOBAL CONSTANT
-	ID_01 : WSTRING := "modbus[tcp:192.168.1.99:502:1:500:h468:h470]";
-	ID_02 : WSTRING := "modbus[tcp:192.168.1.99:502:1:500:h51:]";
+	ID_01_TCP : WSTRING := "modbus[tcp:192.168.1.99:502:1:500:h468:h470]";
+	ID_02_TCP : WSTRING := "modbus[tcp:192.168.1.99:502:1:500:h51:]";
 END_VAR
 
 ]]></OriginalSource>
