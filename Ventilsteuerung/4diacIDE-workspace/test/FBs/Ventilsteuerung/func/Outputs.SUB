@@ -18,7 +18,7 @@
 		</FB>
 		<FB Name="Outputs" Type="CLIENT_1" x="4860" y="4260">
 			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="ID" Value="ID_01"/>
+			<Parameter Name="ID" Value="ID_01_TCP"/>
 		</FB>
 		<FB Name="SPLIT_BYTE_INTO_BOOLS" Type="SPLIT_BYTE_INTO_BOOLS" x="5826.67" y="4360">
 		</FB>

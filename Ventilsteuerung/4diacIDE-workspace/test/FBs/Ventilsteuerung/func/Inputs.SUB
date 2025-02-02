@@ -13,7 +13,7 @@
 		</FB>
 		<FB Name="Inputs" Type="CLIENT_0_1" x="413.33" y="3460">
 			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="ID" Value="ID_02"/>
+			<Parameter Name="ID" Value="ID_02_TCP"/>
 		</FB>
 		<FB Name="DigitalOutput_Q1" Type="QX" x="6860" y="100">
 			<Parameter Name="QI" Value="TRUE"/>
