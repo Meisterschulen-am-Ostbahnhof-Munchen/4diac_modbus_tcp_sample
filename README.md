@@ -2,6 +2,11 @@
 4diac_modbus_tcp_sample
 
 
+for a Gateway RTU to TCP look here: https://github.com/franz-ms-muc/4diac_modbus_rtu_tcp_sample
+
+for a Pure RTU Sample look here: https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_modbus_rtu_sample
+
+
 
 ![image](https://github.com/user-attachments/assets/1c56c030-2ad8-4f50-9d4b-dc929eb3726d)
 
