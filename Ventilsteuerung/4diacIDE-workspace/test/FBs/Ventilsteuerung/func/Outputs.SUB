@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SubAppType Name="Outputs" Comment="Subapplication Type" >
+<SubAppType Name="Outputs" Comment="Subapplication Type">
 	<Identification Standard="61499-2">
 	</Identification>
 	<VersionInfo Version="1.0" Author="franz" Date="2025-01-31">
@@ -18,7 +18,7 @@
 		</FB>
 		<FB Name="Outputs" Type="CLIENT_1" x="4860" y="4260">
 			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="ID" Value="ID_01_TCP"/>
+			<Parameter Name="ID" Value="modbus_const::ID_01_TCP"/>
 		</FB>
 		<FB Name="SPLIT_BYTE_INTO_BOOLS" Type="SPLIT_BYTE_INTO_BOOLS" x="5826.67" y="4360">
 		</FB>
