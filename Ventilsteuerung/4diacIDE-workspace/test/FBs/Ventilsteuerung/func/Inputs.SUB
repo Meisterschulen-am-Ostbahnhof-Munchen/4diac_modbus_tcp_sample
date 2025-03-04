@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SubAppType Name="Inputs" Comment="Subapplication Type" >
+<SubAppType Name="Inputs" Comment="Subapplication Type">
 	<Identification Standard="61499-2">
 	</Identification>
 	<VersionInfo Version="1.0" Author="franz" Date="2025-01-31">
@@ -13,7 +13,7 @@
 		</FB>
 		<FB Name="Inputs" Type="CLIENT_0_1" x="413.33" y="3460">
 			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="ID" Value="ID_02_TCP"/>
+			<Parameter Name="ID" Value="modbus_const::ID_02_TCP"/>
 		</FB>
 		<FB Name="DigitalOutput_Q1" Type="QX" x="6860" y="100">
 			<Parameter Name="QI" Value="TRUE"/>
@@ -111,7 +111,7 @@
 			<Connection Source="SPLIT_BYTE_INTO_BOOLS.BIT_05" Destination="E_D_FF_DigitalOutput_Q6.D" dx1="206.67"/>
 			<Connection Source="SPLIT_BYTE_INTO_BOOLS.BIT_06" Destination="E_D_FF_DigitalOutput_Q7.D" dx1="140"/>
 			<Connection Source="SPLIT_BYTE_INTO_BOOLS.BIT_07" Destination="E_D_FF_DigitalOutput_Q8.D" dx1="73.33"/>
-			<Connection Source="Inputs.RD_1" Destination="SPLIT_BYTE_INTO_BOOLS.IN"/>
+			<Connection Source="Inputs.RD_1" Destination="SPLIT_BYTE_INTO_BOOLS.IN" dx1="420"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>
