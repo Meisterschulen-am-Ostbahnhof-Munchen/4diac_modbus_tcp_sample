@@ -5,49 +5,129 @@
 	<VersionInfo Version="1.0" Author="franz" Date="2025-01-31">
 	</VersionInfo>
 	<CompilerInfo>
+		<Import declaration="logiBUS::io::DI::logiBUS_DI::Input_I1"/>
+		<Import declaration="logiBUS::io::DI::logiBUS_DI::Input_I2"/>
+		<Import declaration="logiBUS::io::DI::logiBUS_DI::Input_I3"/>
+		<Import declaration="logiBUS::io::DI::logiBUS_DI::Input_I4"/>
+		<Import declaration="logiBUS::io::DI::logiBUS_DI::Input_I5"/>
+		<Import declaration="logiBUS::io::DI::logiBUS_DI::Input_I6"/>
+		<Import declaration="logiBUS::io::DI::logiBUS_DI::Input_I7"/>
+		<Import declaration="logiBUS::io::DI::logiBUS_DI::Input_I8"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>
 	</SubAppInterfaceList>
 	<SubAppNetwork>
-		<FB Name="DigitalInput_I1" Type="IX" x="413.33" y="33.33">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalInput_I1" Type="logiBUS::io::DI::logiBUS_IX" x="413.33" y="33.33">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Input" Value="Input_I1"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="F_BYTE_TO_WORD" Type="F_BYTE_TO_WORD" x="3340" y="4360">
+		<FB Name="F_BYTE_TO_WORD" Type="iec61131::conversion::F_BYTE_TO_WORD" x="3340" y="4360">
 		</FB>
-		<FB Name="ASSEMBLE_BYTE_FROM_BOOLS" Type="ASSEMBLE_BYTE_FROM_BOOLS" x="1626.67" y="4360">
+		<FB Name="ASSEMBLE_BYTE_FROM_BOOLS" Type="eclipse4diac::utils::assembling::ASSEMBLE_BYTE_FROM_BOOLS" x="1626.67" y="4360">
 		</FB>
-		<FB Name="Outputs" Type="CLIENT_1" x="4860" y="4260">
+		<FB Name="Outputs" Type="iec61499::net::CLIENT_1" x="4860" y="4260">
 			<Parameter Name="QI" Value="TRUE"/>
 			<Parameter Name="ID" Value="modbus_const::ID_01_TCP"/>
 		</FB>
-		<FB Name="SPLIT_BYTE_INTO_BOOLS" Type="SPLIT_BYTE_INTO_BOOLS" x="5826.67" y="4360">
+		<FB Name="SPLIT_BYTE_INTO_BOOLS" Type="eclipse4diac::utils::splitting::SPLIT_BYTE_INTO_BOOLS" x="5826.67" y="4360">
 		</FB>
-		<FB Name="DigitalInput_I2" Type="IX" x="413.33" y="1213.33">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalInput_I2" Type="logiBUS::io::DI::logiBUS_IX" x="413.33" y="1213.33">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Input" Value="Input_I2"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="DigitalInput_I3" Type="IX" x="413.33" y="2393.33">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalInput_I3" Type="logiBUS::io::DI::logiBUS_IX" x="413.33" y="2393.33">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Input" Value="Input_I3"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="DigitalInput_I4" Type="IX" x="413.33" y="3573.33">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalInput_I4" Type="logiBUS::io::DI::logiBUS_IX" x="413.33" y="3573.33">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Input" Value="Input_I4"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="DigitalInput_I5" Type="IX" x="413.33" y="4753.33">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalInput_I5" Type="logiBUS::io::DI::logiBUS_IX" x="413.33" y="4753.33">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Input" Value="Input_I5"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="DigitalInput_I6" Type="IX" x="413.33" y="5933.33">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalInput_I6" Type="logiBUS::io::DI::logiBUS_IX" x="413.33" y="5933.33">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Input" Value="Input_I6"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="DigitalInput_I7" Type="IX" x="413.33" y="7113.33">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalInput_I7" Type="logiBUS::io::DI::logiBUS_IX" x="413.33" y="7113.33">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Input" Value="Input_I7"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="DigitalInput_I8" Type="IX" x="413.33" y="8293.33">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalInput_I8" Type="logiBUS::io::DI::logiBUS_IX" x="413.33" y="8293.33">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Input" Value="Input_I8"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
 		<EventConnections>
 			<Connection Source="DigitalInput_I1.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
-			<Connection Source="ASSEMBLE_BYTE_FROM_BOOLS.CNF" Destination="F_BYTE_TO_WORD.REQ"/>
-			<Connection Source="F_BYTE_TO_WORD.CNF" Destination="Outputs.REQ"/>
-			<Connection Source="Outputs.CNF" Destination="SPLIT_BYTE_INTO_BOOLS.REQ"/>
+			<Connection Source="ASSEMBLE_BYTE_FROM_BOOLS.CNF" Destination="F_BYTE_TO_WORD.REQ" dx1="213.33"/>
+			<Connection Source="F_BYTE_TO_WORD.CNF" Destination="Outputs.REQ" dx1="286.67"/>
+			<Connection Source="Outputs.CNF" Destination="SPLIT_BYTE_INTO_BOOLS.REQ" dx1="153.33"/>
 			<Connection Source="DigitalInput_I2.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
 			<Connection Source="DigitalInput_I3.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
 			<Connection Source="DigitalInput_I4.IND" Destination="ASSEMBLE_BYTE_FROM_BOOLS.REQ" dx1="140"/>
@@ -58,7 +138,7 @@
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="DigitalInput_I1.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_00" dx1="340"/>
-			<Connection Source="ASSEMBLE_BYTE_FROM_BOOLS." Destination="F_BYTE_TO_WORD.IN"/>
+			<Connection Source="ASSEMBLE_BYTE_FROM_BOOLS." Destination="F_BYTE_TO_WORD.IN" dx1="213.33"/>
 			<Connection Source="F_BYTE_TO_WORD.OUT" Destination="Outputs.SD_1" dx1="73.33"/>
 			<Connection Source="Outputs.RD_1" Destination="SPLIT_BYTE_INTO_BOOLS.IN" dx1="73.33"/>
 			<Connection Source="DigitalInput_I2.IN" Destination="ASSEMBLE_BYTE_FROM_BOOLS.BIT_01" dx1="273.33"/>
