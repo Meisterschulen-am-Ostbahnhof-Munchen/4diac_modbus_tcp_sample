@@ -5,57 +5,135 @@
 	<VersionInfo Version="1.0" Author="franz" Date="2025-01-31">
 	</VersionInfo>
 	<CompilerInfo>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q1"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q2"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q3"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q4"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q5"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q6"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q7"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q8"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>
 	</SubAppInterfaceList>
 	<SubAppNetwork>
-		<FB Name="SPLIT_BYTE_INTO_BOOLS" Type="SPLIT_BYTE_INTO_BOOLS" x="2346.67" y="3760">
+		<FB Name="SPLIT_BYTE_INTO_BOOLS" Type="eclipse4diac::utils::splitting::SPLIT_BYTE_INTO_BOOLS" x="2346.67" y="3760">
 		</FB>
-		<FB Name="Inputs" Type="CLIENT_0_1" x="413.33" y="3460">
+		<FB Name="Inputs" Type="iec61499::net::CLIENT_0_1" x="413.33" y="3460">
 			<Parameter Name="QI" Value="TRUE"/>
 			<Parameter Name="ID" Value="modbus_const::ID_02_TCP"/>
 		</FB>
-		<FB Name="DigitalOutput_Q1" Type="QX" x="6860" y="100">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalOutput_Q1" Type="logiBUS::io::DQ::logiBUS_QX" x="6860" y="100">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Output" Value="Output_Q1"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="E_D_FF_DigitalOutput_Q1" Type="E_D_FF" x="5200" y="300">
+		<FB Name="E_D_FF_DigitalOutput_Q1" Type="iec61499::events::E_D_FF" x="5200" y="300">
 		</FB>
-		<FB Name="E_D_FF_DigitalOutput_Q2" Type="E_D_FF" x="5200" y="1380">
+		<FB Name="E_D_FF_DigitalOutput_Q2" Type="iec61499::events::E_D_FF" x="5200" y="1380">
 		</FB>
-		<FB Name="DigitalOutput_Q2" Type="QX" x="6860" y="1180">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalOutput_Q2" Type="logiBUS::io::DQ::logiBUS_QX" x="6860" y="1180">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Output" Value="Output_Q2"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="E_D_FF_DigitalOutput_Q3" Type="E_D_FF" x="5200" y="2460">
+		<FB Name="E_D_FF_DigitalOutput_Q3" Type="iec61499::events::E_D_FF" x="5200" y="2460">
 		</FB>
-		<FB Name="DigitalOutput_Q3" Type="QX" x="6860" y="2260">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalOutput_Q3" Type="logiBUS::io::DQ::logiBUS_QX" x="6860" y="2260">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Output" Value="Output_Q3"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="E_D_FF_DigitalOutput_Q4" Type="E_D_FF" x="5266.67" y="3540">
+		<FB Name="E_D_FF_DigitalOutput_Q4" Type="iec61499::events::E_D_FF" x="5266.67" y="3540">
 		</FB>
-		<FB Name="DigitalOutput_Q4" Type="QX" x="6926.67" y="3340">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalOutput_Q4" Type="logiBUS::io::DQ::logiBUS_QX" x="6926.67" y="3340">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Output" Value="Output_Q4"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="E_D_FF_DigitalOutput_Q5" Type="E_D_FF" x="5200" y="4620">
+		<FB Name="E_D_FF_DigitalOutput_Q5" Type="iec61499::events::E_D_FF" x="5200" y="4620">
 		</FB>
-		<FB Name="DigitalOutput_Q5" Type="QX" x="6860" y="4420">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalOutput_Q5" Type="logiBUS::io::DQ::logiBUS_QX" x="6860" y="4420">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Output" Value="Output_Q5"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="E_D_FF_DigitalOutput_Q6" Type="E_D_FF" x="5200" y="5700">
+		<FB Name="E_D_FF_DigitalOutput_Q6" Type="iec61499::events::E_D_FF" x="5200" y="5700">
 		</FB>
-		<FB Name="DigitalOutput_Q6" Type="QX" x="6860" y="5500">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalOutput_Q6" Type="logiBUS::io::DQ::logiBUS_QX" x="6860" y="5500">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Output" Value="Output_Q6"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="E_D_FF_DigitalOutput_Q7" Type="E_D_FF" x="5200" y="6780">
+		<FB Name="E_D_FF_DigitalOutput_Q7" Type="iec61499::events::E_D_FF" x="5200" y="6780">
 		</FB>
-		<FB Name="DigitalOutput_Q7" Type="QX" x="6860" y="6580">
-			<Parameter Name="QI" Value="TRUE"/>
+		<FB Name="DigitalOutput_Q7" Type="logiBUS::io::DQ::logiBUS_QX" x="6860" y="6580">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Output" Value="Output_Q7"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
-		<FB Name="E_D_FF_DigitalOutput_Q8" Type="E_D_FF" x="5200" y="7860">
+		<FB Name="E_D_FF_DigitalOutput_Q8" Type="iec61499::events::E_D_FF" x="5200" y="7860">
 		</FB>
-		<FB Name="DigitalOutput_Q8" Type="QX" x="6860" y="7660">
-			<Parameter Name="QI" Value="TRUE"/>
-		</FB>
-		<FB Name="EI_TO_E" Type="EI_TO_E" x="-700" y="3600">
+		<FB Name="DigitalOutput_Q8" Type="logiBUS::io::DQ::logiBUS_QX" x="6860" y="7660">
+			<Parameter Name="QI" Value="TRUE">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="PARAMS" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
+			<Parameter Name="Output" Value="Output_Q8"/>
+			<Parameter Name="QO" Value="">
+				<Attribute Name="Visible" Value="false"/>
+			</Parameter>
 		</FB>
 		<EventConnections>
 			<Connection Source="SPLIT_BYTE_INTO_BOOLS.CNF" Destination="E_D_FF_DigitalOutput_Q1.CLK" dx1="340">
@@ -90,9 +168,8 @@
 				<Attribute Name="Visible" Value="false"/>
 			</Connection>
 			<Connection Source="E_D_FF_DigitalOutput_Q8.EO" Destination="DigitalOutput_Q8.REQ" dx1="73.33"/>
-			<Connection Source="Inputs.INITO" Destination="EI_TO_E.IN" dx1="80" dx2="80" dy="-813.33"/>
-			<Connection Source="EI_TO_E.OUT" Destination="Inputs.REQ" dx1="253.33"/>
 			<Connection Source="Inputs.CNF" Destination="SPLIT_BYTE_INTO_BOOLS.REQ" dx1="593.33"/>
+			<Connection Source="Inputs.INITO" Destination="Inputs.REQ" dx1="620" dx2="520" dy="-360"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="E_D_FF_DigitalOutput_Q1.Q" Destination="DigitalOutput_Q1.OUT" dx1="73.33"/>
