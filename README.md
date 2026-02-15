@@ -8,6 +8,13 @@ Das Modul verfügt über 6 digitale Eingänge und 8 Relais-Ausgänge. Die Standa
 ## Modbus Konfiguration
 Die Modbus-Parameter sind in der Datei `modbus_const.gcf` als globale Konstanten definiert. Der Zugriff erfolgt über Gruppen-Register, was effizienter ist als das Lesen einzelner Bits.
 
+### Warum CLIENT_1 und Holding Register (h)?
+Obwohl das akYtec-Modul und das Waveshare-Modul (aus dem RTU-Sample) optisch ähnlich wirken, unterscheiden sie sich grundlegend in ihrer Modbus-Implementierung:
+
+1. **Register-Design (akYtec)**: Das MK210-Modul bündelt alle Ein- und Ausgänge in 16-Bit Registern (`h`). Ein einzelnes Register (z.B. `h51` für Eingänge) enthält den Status aller Kanäle als Bitmaske.
+2. **Effizienz**: In Eclipse 4diac nutzen wir daher einen `CLIENT_1` Baustein. Ein einzelner Datenport am Baustein (vom Typ `WORD` oder `UINT`) überträgt den Status aller 8 bzw. 6 Kanäle gleichzeitig. Das spart Netzwerk-Traffic und Rechenzeit.
+3. **Einschränkung**: Laut Dokumentation unterstützt das akYtec-Modul **keine Coils (`c`)** oder Discrete Inputs (`d`). Ein Zugriff über Einzelbits ist also nicht möglich.
+
 ### Verbindungs-Strings erklärt
 Die Syntax in 4diac FORTE folgt dem Schema:
 `modbus[protocol:ip:port:slaveId:pollFrequency:readAddresses:sendAddresses]`
