@@ -2,7 +2,7 @@
 <FBType Name="GEN_RMP" Comment="this signal generator generates a ramp wave output">
 	<Identification Standard="61499-1" Description="&#9;version 1.4&#9;10. mar. 2009&#10;&#9;programmer &#9;oscat&#10;&#9;tested BY&#9;&#9;oscat&#10;&#10;this signal generator generates a ramp wave output. The ramp wave signal is defined by period time (PT), &#10;amplitude (AM), offset (OS) and a specific delay for the output signal (DL).&#10;The Output waveform will have its minimum peak at OS and its maximum peak at AM + OS. &#10;The delay input can delay a signal up to PT, this can be useful to synchronize different generators &#10;and generate interleaving signals.&#10;in addition to the analog output Out there is a second boolean output Q with is true for one cycle when the ramp starts.">
 	</Identification>
-	<VersionInfo Version="1.0" Author="franz" Date="2025-12-21">
+	<VersionInfo Version="1.0" Author="Franz Höpfinger" Date="2025-12-21" Remarks="initial API and implementation and/or initial documentation">
 	</VersionInfo>
 	<CompilerInfo packageName="OSCAT::Basic::POUs::Engineering::signal_generators">
 		<Import declaration="OSCAT::Basic::POUs::Mathematical::MODR"/>
@@ -12,7 +12,7 @@
 	</CompilerInfo>
 	<InterfaceList>
 		<EventInputs>
-			<Event Name="INIT" Type="EInit" Comment="Init Request">
+			<Event Name="EINIT" Type="EInit" Comment="Init Request">
 			</Event>
 			<Event Name="REQ" Type="Event" Comment="Normal Execution Request">
 				<With Var="PT"/>
@@ -51,8 +51,8 @@
 			<VarDeclaration Name="ltemp" Type="REAL"/>
 			<VarDeclaration Name="DL_M" Type="REAL"/>
 		</InternalVars>
-		<ECState Name="INIT">
-			<ECAction Algorithm="INIT" Output="INITO"/>
+		<ECState Name="EINIT">
+			<ECAction Algorithm="EINIT" Output="INITO"/>
 		</ECState>
 		<ECState Name="REQ">
 			<ECAction Algorithm="REQ" Output="CNF"/>
@@ -60,8 +60,8 @@
 		<ECState Name="RST">
 			<ECAction Algorithm="RST" Output="CNF"/>
 		</ECState>
-		<Algorithm Name="INIT">
-			<ST><![CDATA[ALGORITHM INIT
+		<Algorithm Name="EINIT">
+			<ST><![CDATA[ALGORITHM EINIT
 init := FALSE;
 END_ALGORITHM]]></ST>
 		</Algorithm>
