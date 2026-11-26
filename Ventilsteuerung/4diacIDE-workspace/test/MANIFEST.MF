@@ -24,6 +24,10 @@
     <Required SymbolicName="adapter_iec61131-3" Version="3.0.0"/>
     <Required SymbolicName="adapter_selection" Version="3.0.0"/>
     <Required SymbolicName="adapter_types" Version="3.0.0"/>
+    <Required SymbolicName="convert" Version="3.0.0"/>
+    <Required SymbolicName="core" Version="3.0.0"/>
+    <Required SymbolicName="events" Version="3.0.0"/>
+    <Required SymbolicName="iec61131-3" Version="3.0.1"/>
     <Required SymbolicName="iec61131-3-bool" Version="3.0.1"/>
     <Required SymbolicName="init_stages" Version="1.0.0"/>
     <Required SymbolicName="isobus_TC" Version="3.0.0"/>
@@ -54,9 +58,14 @@
     <Required SymbolicName="logiBUS_utils" Version="3.0.0"/>
     <Required SymbolicName="logiBUS_utils_adapter" Version="3.0.0"/>
     <Required SymbolicName="logiBUS_version" Version="3.0.0"/>
+    <Required SymbolicName="net" Version="3.0.0"/>
     <Required SymbolicName="net_adapter" Version="3.0.0"/>
     <Required SymbolicName="opcua" Version="3.0.0"/>
     <Required SymbolicName="quarter" Version="3.0.0"/>
+    <Required SymbolicName="rtevents" Version="3.0.0"/>
+    <Required SymbolicName="signalprocessing" Version="3.0.0"/>
+    <Required SymbolicName="system" Version="3.0.0"/>
+    <Required SymbolicName="utils" Version="3.0.0"/>
     <Required SymbolicName="utils_adapter" Version="3.0.0"/>
   </Dependencies>
   <Product Name="test" SymbolicName="test">
