@@ -9,17 +9,8 @@
 	<VersionInfo Organization="TU Wien ACIN" Version="1.0" Author="Monika Wenger" Date="2011-06-21">
 	</VersionInfo>
 	<CompilerInfo packageName="adapter::booleanOperators">
-		<Import declaration="eclipse4diac::core::TypeHash"/>
 	</CompilerInfo>
 	<InterfaceList>
-		<EventInputs>
-			<Event Name="INIT" Type="EInit" Comment="Initialization Request">
-			</Event>
-		</EventInputs>
-		<EventOutputs>
-			<Event Name="INITO" Type="EInit" Comment="Initialization Confirm">
-			</Event>
-		</EventOutputs>
 		<Plugs>
 			<AdapterDeclaration Name="OUT" Type="adapter::types::unidirectional::AX" Comment="Output" x="2900" y="1100"/>
 		</Plugs>
@@ -29,7 +20,6 @@
 	</InterfaceList>
 	<FBNetwork>
 		<EventConnections>
-			<Connection Source="INIT" Destination="INITO"/>
 			<Connection Source="IN.E1" Destination="OUT.E1"/>
 		</EventConnections>
 		<DataConnections>
